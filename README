@@ -1,0 +1,13 @@
+Shah El-Rahman
+
+Search Movies:
+	java Movies -Xmx1024m
+Search Actors:
+	java Actors -Xmx2048m
+	
+	For the movies, I used an inverted index on each keyword that is in the title. I saved
+the line numbers in an ArrayList. When a keyboard is searched, the movie at that line is
+outputted.
+	
+	For actors, I used a HashMap keeping the actor name in the as the key and the movies as 
+value. The movies are stored as one large string to reduce the overhead of multiple objects
